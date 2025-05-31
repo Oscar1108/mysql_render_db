@@ -1,6 +1,7 @@
 services:
-  - type: private
+  - type: web
     name: mysql_render_db
     env: docker
-    dockerfilePath: ./Dockerfile
     plan: free
+    dockerfilePath: ./Dockerfile
+    public: false
