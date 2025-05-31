@@ -1,6 +1,7 @@
 services:
-  - type: web
+  - type: private
     name: mysql_render_db
     env: docker
-    plan: free
     dockerfilePath: ./Dockerfile
+    plan: free
+    autoDeploy: true
